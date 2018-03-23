@@ -1,0 +1,41 @@
+Description of headers:
+
+Request:
+:authority - pseudo-header field includes the authority portion of the target URI.
+:method - the "method" indicates what kind of request this is. Most common methods are GET, POST and HEAD.
+:path - the "path" is generally the part of the url that comes after the host (domain).
+Accept - request HTTP header advertises which content types, expressed as MIME types, the client is able to understand.
+Accept-encoding - most modern browsers support gzip, and will send this in the header. The web server then can send the HTML output in a compressed format. This can reduce the size by up to 80% to save bandwidth and time.
+Accept-language - this header displays the default language setting of the user.
+Cookie - as the name suggests, this sends the cookies stored in your browser for that domain. Cookies can also contain the session id.
+Upgrade-insecure-requests - request header sends a signal to the server expressing the client’s preference for an encrypted and authenticated response, and that it can successfully handle the upgrade-insecure-requests CSP directive.
+User-agent - this header can carry several pieces of information such as browser name and version, Operating System name and version, default language.
+Host - an HTTP Request is sent to a specific IP Addresses. But since most servers are capable of hosting multiple websites under the same IP, they must know which domain name the browser is looking for.
+Connection - general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.
+
+Response:
+Alt-svc - indicate that its resources can also be accessed at a different network location (host or port) or using a different protocol.
+When using HTTP/2, servers should instead send an ALTSVC frame.
+Cache-control — field is used to specify directives which must be obeyed by all caching mechanisms along the request/response chain." These "caching mechanisms" include gateways and proxies that your ISP may be using.
+Content-encoding - header is usually set when the returned content is compressed.
+Content-type - this  indicates the "mime-type" of the document. The browser then decides how to interpret the contents based on this.
+Date - general HTTP header contains the date and time at which the message was originated.
+Expires - header contains the date/time after which the response is considered stale.
+Server - contains information about the software used by the origin server to handle the request.
+Strict-transport-security - response header (often abbreviated as HSTS) lets a web site tell browsers that it should only be accessed using HTTPS, instead of using HTTP.
+X-content-type-options - response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed. 
+X-frame-options - HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe> or <object> . 
+X-xss-protection - response header is a feature of Internet Explorer, Chrome and Safari that stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+Vary - determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server. It is used by the server to indicate which headers it used when selecting a representation of a resource in a content negotiation algorithm.
+Pragma - HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain. It is used for backwards compatibility with HTTP/1.0 caches where the Cache-Control HTTP/1.1 header is not yet present.
+X-Powered-By - is a common non-standard HTTP response header (most headers prefixed with an 'X-' are non-standard). It's often included by default in responses constructed via a particular scripting technology.
+Status - header field specifying the status of the HTTP response. Normal HTTP responses use a separate "Status-Line" instead, defined by RFC 7230.
+Set-cookie - when a website wants to set or update a cookie in your browser, it will use this header.
+Transfer-Encoding -  header specifies the form of encoding used to safely transfer the entity to the user.
+Via - general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.
+Accept-Ranges - response HTTP header is a marker used by the server to advertise its support of partial requests. The value of this field indicates the unit that can be used to define a range.
+X-Cache - indicates that the requested object was neither in the shield cache (a MISS) nor the local delivering node (also a MISS). 
+X-Cache-Hits - reflects that same MISS information.
+X-Timer - header provides information about the journey a content request takes from end to end, including the time it takes to reach the asset Fastly caches and then return to the requestor. 
+       
+
