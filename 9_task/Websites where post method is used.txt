@@ -1,0 +1,11 @@
+1). How did I detect that POST method was used?
+For this you need to use Chrome DevTools ----> Network.
+
+2). List with websites & description where POST is used there:
+1. https://www.instagram.com/ - (add login/registarion forms);
+2. https://www.facebook.com/ - (add login/registarion forms, using SEND button that sends data to server with POST request);
+3. https://telegram.org/ - (login/registarion);
+4. https://twitter.com/ - (login/registarion forms);
+5. https://www.linkedin.com/ - (add login/registarion forms);
+
+3). The POST method is used for operations that have side effects and cannot be safely repeated. For example, transferring money from one bank account to another has side effects and should not be repeated without explicit approval by the user. Transmission of information through the POST method is safer because the data are in the body of the request.
