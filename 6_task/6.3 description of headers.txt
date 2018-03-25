@@ -2,7 +2,7 @@ Description of headers:
 
 Request:
 Accept - request HTTP header advertises which content types, expressed as MIME types, the client is able to understand.
-Accept - Encoding - most modern browsers support gzip, and will send this in the header. The web server then can send the HTML output in a compressed format. This can reduce the size by up to 80% to save bandwidth and time.
+Accept-Encoding - most modern browsers support gzip, and will send this in the header. The web server then can send the HTML output in a compressed format. This can reduce the size by up to 80% to save bandwidth and time.
 User-Agent - this header can carry several pieces of information such as browser name and version, Operating System name and version, default language.
 
 Response:
@@ -21,4 +21,4 @@ Strict-Transport-Security - response header (often abbreviated as HSTS)  lets a 
 Vary - determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server. It is used by the server to indicate which headers it used when selecting a representation of a resource in a content negotiation algorithm.
 Cookie - contains stored HTTP cookies previously sent by the server with the Set-Cookie header.
 Accept-Language - request HTTP header advertises which languages the client is able to understand, and which locale variant is preferred.
-X-Frame-Options - HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe> or <object> . 
+X-Frame-Options - HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe> or <object>. 
